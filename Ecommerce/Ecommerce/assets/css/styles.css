@@ -1,0 +1,29 @@
+/* Add animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    animation: fadeIn 1s ease;
+}
+/* Ensure all product images have the same size */
+.card-img-top {
+    width: 100%; /* Make the image responsive */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+/* Style for product images in the cart */
+.img-thumbnail {
+    width: 100px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
